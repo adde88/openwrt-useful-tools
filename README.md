@@ -1,2 +1,5 @@
-# openwrt-useful-tols
-A repo containing different tools for OpenWRT i consider useful.
+# Useful Tools - OpenWRT CC (ar71xx)
+
+This repo contains different tools (binaries and installation-packages) that i consider useful.  
+
+-Zylla
