@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=kismet-remote
-PKG_VERSION:=25.05.2018
+PKG_VERSION:=06.07.2018
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://www.kismetwireless.net/git/kismet.git
-PKG_SOURCE_VERSION:=5158958f01556380c5d6e363268f8dd0ad204ce4
+PKG_SOURCE_VERSION:=4b71d0daab317b9fac2ef219dcfffa22bb4022b4
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
@@ -37,19 +37,19 @@ CONFIGURE_ARGS += \
 	--enable-capture-tools-only \
 	--disable-python-tools \
 	--with-netlink \
-    --with-protocc=$(STAGING_DIR_HOST)/bin/protoc-c
+    	--with-protocc=$(STAGING_DIR_HOST)/bin/protoc-c
 
 # Override libs to force lpthread because we don't detect it properly on openwrt
 CONFIGURE_VARS += \
-	LIBS="-lpthread" 
+	LIBS="-lpthread"
 
 TARGET_CFLAGS+=-I$(STAGING_DIR)/usr/include/libnl
 TARGET_CPPFLAGS+=-I$(STAGING_DIR)/usr/include/libnl
 
 define Build/Compile
 	$(MAKE) -C $(PKG_BUILD_DIR) \
-		LD="$(TARGET_CXX)" \
-		datasources
+	LD="$(TARGET_CXX)" \
+	datasources
 endef
 
 define Package/kismet-remote/install
@@ -60,4 +60,3 @@ define Package/kismet-remote/install
 endef
 
 $(eval $(call BuildPackage,kismet-remote))
-

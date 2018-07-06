@@ -4,12 +4,12 @@ include $(TOPDIR)/rules.mk
 # easily adapted to other OpenWRT builds.
 
 PKG_NAME:=kismet
-PKG_VERSION:=25.05.2018
-PKG_RELEASE:=0
+PKG_VERSION:=06.07.2018
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://www.kismetwireless.net/git/kismet.git
-PKG_SOURCE_VERSION:=5158958f01556380c5d6e363268f8dd0ad204ce4
+PKG_SOURCE_VERSION:=4b71d0daab317b9fac2ef219dcfffa22bb4022b4
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
@@ -19,7 +19,7 @@ include $(INCLUDE_DIR)/package.mk
 
 PKG_USE_MIPS16:=0
 
-HOST_BUILD_DEPENDS:=protobuf/host 
+HOST_BUILD_DEPENDS:=protobuf/host
 
 define Package/kismet
   SECTION:=net
@@ -44,11 +44,11 @@ CONFIGURE_ARGS += \
 	--sysconfdir=/etc/kismet \
 	--bindir=/usr/bin \
 	--disable-python-tools \
-    --with-protoc=$(STAGING_DIR_HOST)/bin/protoc 
-    # This is quite dirty - We'd WANT protoc-c to be in the host tools, but the openwrt
-    # package doesn't make a host version, so we have to compile on the host; this works
-    # right now because there is only one version of protoc-c...
-    # --with-protocc=$(STAGING_DIR_HOSTPKG)/bin/protoc-c
+    	--with-protoc=$(STAGING_DIR_HOST)/bin/protoc
+	# This is quite dirty - We'd WANT protoc-c to be in the host tools, but the openwrt
+	# package doesn't make a host version, so we have to compile on the host; this works
+	# right now because there is only one version of protoc-c...
+	# --with-protocc=$(STAGING_DIR_HOSTPKG)/bin/protoc-c
 
 # Override libs to force lpthread because we don't detect it properly on openwrt
 CONFIGURE_VARS += \
@@ -58,8 +58,8 @@ CONFIGURE_VARS += \
 
 define Build/Compile
 	$(MAKE) -C $(PKG_BUILD_DIR) \
-		LD="$(TARGET_CXX)" \
-		all
+	LD="$(TARGET_CXX)" \
+	all
 endef
 
 define Package/kismet/install
