@@ -4,27 +4,27 @@ include $(TOPDIR)/rules.mk
 # easily adapted to other OpenWRT builds.
 
 PKG_NAME:=kismet
-PKG_VERSION:=06.07.2018
+PKG_VERSION:=2019
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://www.kismetwireless.net/git/kismet.git
-PKG_SOURCE_VERSION:=4b71d0daab317b9fac2ef219dcfffa22bb4022b4
+PKG_SOURCE_VERSION:=368f782e7238b5efae8b2c02108cc35c849ec39e
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
-
-include $(INCLUDE_DIR)/package.mk
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_USE_MIPS16:=0
+
+include $(INCLUDE_DIR)/package.mk
 
 HOST_BUILD_DEPENDS:=protobuf/host
 
 define Package/kismet
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=Kismet (2018)
+  TITLE:=Kismet (2019)
   #DESCRIPTION:=This variable is obsolete. use the Package/name/description define instead!
   URL:=https://www.kismetwireless.net/
   DEPENDS:=+libdw +libpthread +libpcap +libpcre +libmicrohttpd +libnl +libcap +libstdcpp +libncurses +libsqlite3 +zlib +protobuf +libprotobuf-c
@@ -44,17 +44,18 @@ CONFIGURE_ARGS += \
 	--sysconfdir=/etc/kismet \
 	--bindir=/usr/bin \
 	--disable-python-tools \
-    	--with-protoc=$(STAGING_DIR_HOST)/bin/protoc
+    	--with-protoc=$(STAGING_DIR_HOST)/bin/protoc \
+	--disable-libusb \
 	# This is quite dirty - We'd WANT protoc-c to be in the host tools, but the openwrt
 	# package doesn't make a host version, so we have to compile on the host; this works
 	# right now because there is only one version of protoc-c...
-	# --with-protocc=$(STAGING_DIR_HOSTPKG)/bin/protoc-c
+	#--with-protocc=$(STAGING_DIR_HOST)/bin/protoc-c
 
 # Override libs to force lpthread because we don't detect it properly on openwrt
 CONFIGURE_VARS += \
-	CXXFLAGS="$$$$CXXFLAGS " \
-    	CFLAGS+="$$$$CFLAGS " \
-	LIBS="-lm -lpthread" 
+	CXXFLAGS="$$$$CXXFLAGS" \
+    	CFLAGS+="$$$$CFLAGS" \
+	LIBS="-lm -lpthread"
 
 define Build/Compile
 	$(MAKE) -C $(PKG_BUILD_DIR) \
