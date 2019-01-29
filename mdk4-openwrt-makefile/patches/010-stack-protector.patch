@@ -1,0 +1,13 @@
+--- a/common.mak
++++ b/common.mak
+@@ -151,10 +151,6 @@ ifeq ($(GCC_OVER49), 0)
+ 	endif
+ endif
+ 
+-ifeq ($(GCC_OVER49), 1)
+-	COMMON_CFLAGS += -fno-stack-protector-strong
+-endif
+-
+ ifeq ($(GCC_OVER45), 1)
+ 	CFLAGS		+= -Wno-unused-but-set-variable -Wno-array-bounds
+ endif
