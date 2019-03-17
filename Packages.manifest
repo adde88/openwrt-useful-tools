@@ -1,8 +1,11 @@
 Package: aircrack-ng
 Version: 1.5.2-6
 Depends: libc, libpcap, libpcre, libpthread, libopenssl, libnl, zlib
+Source: package/net/aircrack-ng
 License: GPL-2.0
+LicenseFiles: LICENSE
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com>
 Architecture: ar71xx
 Installed-Size: 571491
 Filename: bin/ar71xx/packages/base/aircrack-ng_1.5.2-6_ar71xx.ipk
@@ -14,8 +17,11 @@ Description:  WLAN tools for breaking 802.11 WEP/WPA keys
 Package: airmon-ng
 Version: 1.5.2-6
 Depends: libc, wireless-tools, ethtool, procps-ng
+Source: package/net/aircrack-ng
 License: GPL-2.0
+LicenseFiles: LICENSE
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com>
 Architecture: ar71xx
 Installed-Size: 13030
 Filename: bin/ar71xx/packages/base/airmon-ng_1.5.2-6_ar71xx.ipk
@@ -27,7 +33,9 @@ Description:  Bash script designed to turn wireless cards into monitor mode.
 Package: asleap
 Version: 2.2-1
 Depends: libc, libpthread, libopenssl, libpcap
+Source: /root/gits/hostapd-mana-openwrt/net/asleap
 Section: base
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>, Original asleap package: Josh <jwright@hasborg.com>
 Architecture: ar71xx
 Installed-Size: 11407
 Filename: bin/ar71xx/packages/base/asleap_2.2-1_ar71xx.ipk
@@ -40,8 +48,11 @@ Description:  A generic MS-CHAPv2 cracking tool.
 Package: curl
 Version: 7.40.0-4
 Depends: libc, libcurl
+Source: package/net/curl
 License: MIT
+LicenseFiles: COPYING
 Section: net
+Maintainer: Imre Kaloz <kaloz@openwrt.org>
 Architecture: ar71xx
 Installed-Size: 37605
 Filename: bin/ar71xx/packages/base/curl_7.40.0-4_ar71xx.ipk
@@ -53,7 +64,9 @@ Description:  A client-side URL transfer utility
 Package: git-gitweb
 Version: 2.20.1-1
 Depends: libc, libopenssl, libpthread, librt, zlib, git, perlbase-essential, perlbase-file, perlbase-fcntl, perlbase-encode, perlbase-digest, perlbase-time, perl-cgi
+Source: package/net/git
 Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ar71xx
 Installed-Size: 86613
 Filename: bin/ar71xx/packages/base/git-gitweb_2.20.1-1_ar71xx.ipk
@@ -68,7 +81,9 @@ Description:  Git is a free & open source, distributed version control system
 Package: git-http
 Version: 2.20.1-1
 Depends: libc, libopenssl, libpthread, librt, zlib, git, libcurl
+Source: package/net/git
 Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ar71xx
 Installed-Size: 1414369
 Filename: bin/ar71xx/packages/base/git-http_2.20.1-1_ar71xx.ipk
@@ -84,7 +99,9 @@ Description:  Git is a free & open source, distributed version control system
 Package: git
 Version: 2.20.1-1
 Depends: libc, libopenssl, libpthread, librt, zlib
+Source: package/net/git
 Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ar71xx
 Installed-Size: 4155720
 Filename: bin/ar71xx/packages/base/git_2.20.1-1_ar71xx.ipk
@@ -98,7 +115,9 @@ Description:  Git is a free & open source, distributed version control system
 Package: hcxdumptool
 Version: 5.1.4-1
 Depends: libc, libpcap
+Source: /root/gits/hcxtools-hcxdumptool-openwrt/net/hcxdumptool
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 29117
 Filename: bin/ar71xx/packages/base/hcxdumptool_5.1.4-1_ar71xx.ipk
@@ -114,7 +133,9 @@ Description:  Small tool to capture packets from wlan devices. After capturing, 
 Package: hcxtools
 Version: 5.1.4-1
 Depends: libc, libpthread, libpcap, zlib, libcurl, libopenssl
+Source: /root/gits/hcxtools-hcxdumptool-openwrt/net/hcxtools
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 102534
 Filename: bin/ar71xx/packages/base/hcxtools_5.1.4-1_ar71xx.ipk
@@ -127,7 +148,9 @@ Description:  Set of tools convert packets from captures (h = hash, c = capture,
 Package: hostapd-mana-light
 Version: 2.6.5-4-ssl
 Depends: libc, libnl-tiny, libubus, libopenssl
+Source: /root/gits/hostapd-mana-openwrt/net/hostapd-mana
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 504542
 Filename: bin/ar71xx/packages/base/hostapd-mana-light_2.6.5-4-ssl_ar71xx.ipk
@@ -139,7 +162,9 @@ Description:  This package contains a hostapd with support for the MANA/KARMA at
 Package: hostapd-mana
 Version: 2.6.5-4-ssl
 Depends: libc, libnl-tiny, libubus, libopenssl
+Source: /root/gits/hostapd-mana-openwrt/net/hostapd-mana
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 510195
 Filename: bin/ar71xx/packages/base/hostapd-mana_2.6.5-4-ssl_ar71xx.ipk
@@ -151,8 +176,10 @@ Description:  This package contains hostapd with support for the MANA/KARMA atta
 Package: hwloc-utils
 Version: 2.0.3-1
 Depends: libc, libhwloc, libncursesw
+Source: package/libs/hwloc
 License: BSD-3-Clause
 Section: utils
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ar71xx
 Installed-Size: 70629
 Filename: bin/ar71xx/packages/base/hwloc-utils_2.0.3-1_ar71xx.ipk
@@ -171,7 +198,9 @@ Description:  The Portable Hardware Locality (hwloc) software package provides a
 Package: kismet-remote
 Version: 2019-3
 Depends: libc, libpthread, libpcap, libnl-tiny, libprotobuf-c
+Source: /root/gits/kismet/packaging/openwrt/chaos-calmer/kismet-remote
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 99646
 Filename: bin/ar71xx/packages/base/kismet-remote_2019-3_ar71xx.ipk
@@ -183,7 +212,9 @@ Description:  Kismet remote capture binary for 2019 Kismet
 Package: kismet
 Version: 2019-3
 Depends: libc, libdw, libpthread, libpcap, libpcre, libmicrohttpd, libnl, libcap, libstdcpp, libncurses, libsqlite3, zlib, protobuf, libprotobuf-c
+Source: /root/gits/kismet/packaging/openwrt/chaos-calmer/kismet
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 2661797
 Filename: bin/ar71xx/packages/base/kismet_2019-3_ar71xx.ipk
@@ -197,8 +228,11 @@ Description:  Kismet wireless capture and IDS
 Package: libasm
 Version: 0.169-1
 Depends: libc, libelf1, libdw
+Source: package/libs/elfutils
 License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
 Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Architecture: ar71xx
 Installed-Size: 11091
 Filename: bin/ar71xx/packages/base/libasm_0.169-1_ar71xx.ipk
@@ -210,8 +244,11 @@ Description:  ELF manipulation libraries (libasm)
 Package: libcurl
 Version: 7.40.0-4
 Depends: libc, libpolarssl
+Source: package/net/curl
 License: MIT
+LicenseFiles: COPYING
 Section: libs
+Maintainer: Imre Kaloz <kaloz@openwrt.org>
 Architecture: ar71xx
 Installed-Size: 98890
 Filename: bin/ar71xx/packages/base/libcurl_7.40.0-4_ar71xx.ipk
@@ -223,8 +260,11 @@ Description:  A client-side URL transfer library
 Package: libdw
 Version: 0.169-1
 Depends: libc, libelf1, libbz2
+Source: package/libs/elfutils
 License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
 Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Architecture: ar71xx
 Installed-Size: 127113
 Filename: bin/ar71xx/packages/base/libdw_0.169-1_ar71xx.ipk
@@ -236,8 +276,11 @@ Description:  ELF manipulation libraries (libdw)
 Package: libelf1
 Version: 0.169-1
 Depends: libc, zlib
+Source: package/libs/elfutils
 License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
 Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Architecture: ar71xx
 Installed-Size: 37834
 Filename: bin/ar71xx/packages/base/libelf1_0.169-1_ar71xx.ipk
@@ -249,8 +292,10 @@ Description:  ELF manipulation libraries (libelf)
 Package: libhwloc
 Version: 2.0.3-1
 Depends: libc
+Source: package/libs/hwloc
 License: BSD-3-Clause
 Section: libs
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ar71xx
 Installed-Size: 95916
 Filename: bin/ar71xx/packages/base/libhwloc_2.0.3-1_ar71xx.ipk
@@ -269,8 +314,11 @@ Description:  The Portable Hardware Locality (hwloc) software package provides a
 Package: libmicrohttpd
 Version: 0.9.38-1.2
 Depends: libc, libpthread, libgcrypt, libgnutls, libgpg-error, libopenssl
+Source: package/libs/libmicrohttpd
 License: LGPL-2.1
+LicenseFiles: COPYING
 Section: libs
+Maintainer: Martijn Zilverschoon <martijn@friedzombie.com>
 Architecture: ar71xx
 Installed-Size: 48681
 Filename: bin/ar71xx/packages/base/libmicrohttpd_0.9.38-1.2_ar71xx.ipk
@@ -283,7 +331,9 @@ Description:  GNU libmicrohttpd is a small C library that is supposed to make it
 Package: libncurses
 Version: 5.9-2
 Depends: libc, terminfo
+Source: package/libs/ncurses
 License: MIT
+LicenseFiles: README
 Section: libs
 Architecture: ar71xx
 Installed-Size: 118228
@@ -296,7 +346,9 @@ Description:  Terminal handling library
 Package: libncursesw
 Version: 5.9-2
 Depends: libc
+Source: package/libs/ncurses
 License: MIT
+LicenseFiles: README
 Section: libs
 Architecture: ar71xx
 Installed-Size: 134327
@@ -309,8 +361,10 @@ Description:  Terminal handling library (Unicode)
 Package: libnl-tiny
 Version: 0.1-5
 Depends: libc
+Source: package/libs/libnl-tiny
 License: LGPL-2.1
 Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ar71xx
 Installed-Size: 12150
 Filename: bin/ar71xx/packages/base/libnl-tiny_0.1-5_ar71xx.ipk
@@ -322,6 +376,7 @@ Description:  This package contains a stripped down version of libnl
 Package: libnl
 Version: 3.2.21-1
 Depends: libc, libpthread
+Source: package/libs/libnl
 License: LGPL-2.1
 Section: libs
 Architecture: ar71xx
@@ -335,7 +390,9 @@ Description:  This package contains a library for applications dealing with netl
 Package: libopenssl-conf
 Version: 1.1.1b-1
 Depends: libc, libopenssl
+Source: package/libs/openssl
 License: OpenSSL
+LicenseFiles: LICENSE
 Section: libs
 Architecture: ar71xx
 Installed-Size: 3887
@@ -352,7 +409,9 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
 Package: libopenssl
 Version: 1.1.1b-1
 Depends: libc, libpthread
+Source: package/libs/openssl
 License: OpenSSL
+LicenseFiles: LICENSE
 Section: libs
 Architecture: ar71xx
 Installed-Size: 957135
@@ -369,8 +428,10 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
 Package: libpcap
 Version: 1.9.0-1
 Depends: libc
+Source: package/libs/libpcap
 License: BSD-3-Clause
 Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: ar71xx
 Installed-Size: 91429
 Filename: bin/ar71xx/packages/base/libpcap_1.9.0-1_ar71xx.ipk
@@ -383,8 +444,10 @@ Description:  This package contains a system-independent library for user-level 
 Package: libprotobuf-c
 Version: v1.2.1
 Depends: libc
+Source: package/libs/protobuf-c
 License: BSD-2c
 Section: libs
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
 Architecture: ar71xx
 Installed-Size: 10802
 Filename: bin/ar71xx/packages/base/libprotobuf-c_v1.2.1_ar71xx.ipk
@@ -399,8 +462,10 @@ Description:  Runtime library to use Google Protocol Buffers from C applications
 Package: libsqlite3
 Version: 3081101-1
 Depends: libc, libpthread
+Source: package/libs/protobuf/sqlite3
 License: PUBLICDOMAIN
 Section: libs
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Architecture: ar71xx
 Installed-Size: 342549
 Filename: bin/ar71xx/packages/base/libsqlite3_3081101-1_ar71xx.ipk
@@ -415,7 +480,9 @@ Description:  SQLite is a small C library that implements a self-contained, embe
 Package: openssl-util
 Version: 1.1.1b-1
 Depends: libc, libopenssl, libopenssl-conf
+Source: package/libs/openssl
 License: OpenSSL
+LicenseFiles: LICENSE
 Section: utils
 Architecture: ar71xx
 Installed-Size: 236569
@@ -432,8 +499,11 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
 Package: procps-ng-free
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 5295
 Filename: bin/ar71xx/packages/base/procps-ng-free_3.3.15-1_ar71xx.ipk
@@ -445,8 +515,11 @@ Description:  Installs the applet free.
 Package: procps-ng-kill
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7815
 Filename: bin/ar71xx/packages/base/procps-ng-kill_3.3.15-1_ar71xx.ipk
@@ -458,8 +531,11 @@ Description:  Installs the applet kill.
 Package: procps-ng-pgrep
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7432
 Filename: bin/ar71xx/packages/base/procps-ng-pgrep_3.3.15-1_ar71xx.ipk
@@ -471,8 +547,11 @@ Description:  Installs the applet pgrep.
 Package: procps-ng-pkill
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7429
 Filename: bin/ar71xx/packages/base/procps-ng-pkill_3.3.15-1_ar71xx.ipk
@@ -484,8 +563,11 @@ Description:  Installs the applet pkill.
 Package: procps-ng-pmap
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 9448
 Filename: bin/ar71xx/packages/base/procps-ng-pmap_3.3.15-1_ar71xx.ipk
@@ -497,8 +579,11 @@ Description:  Installs the applet pmap.
 Package: procps-ng-ps
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 29614
 Filename: bin/ar71xx/packages/base/procps-ng-ps_3.3.15-1_ar71xx.ipk
@@ -510,8 +595,11 @@ Description:  Installs the applet ps.
 Package: procps-ng-pwdx
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 2794
 Filename: bin/ar71xx/packages/base/procps-ng-pwdx_3.3.15-1_ar71xx.ipk
@@ -523,8 +611,11 @@ Description:  Installs the applet pwdx.
 Package: procps-ng-skill
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7837
 Filename: bin/ar71xx/packages/base/procps-ng-skill_3.3.15-1_ar71xx.ipk
@@ -536,8 +627,11 @@ Description:  Installs the applet skill.
 Package: procps-ng-slabtop
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 5448
 Filename: bin/ar71xx/packages/base/procps-ng-slabtop_3.3.15-1_ar71xx.ipk
@@ -549,8 +643,11 @@ Description:  Installs the applet slabtop.
 Package: procps-ng-snice
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7835
 Filename: bin/ar71xx/packages/base/procps-ng-snice_3.3.15-1_ar71xx.ipk
@@ -562,8 +659,11 @@ Description:  Installs the applet snice.
 Package: procps-ng-tload
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 4443
 Filename: bin/ar71xx/packages/base/procps-ng-tload_3.3.15-1_ar71xx.ipk
@@ -575,8 +675,11 @@ Description:  Installs the applet tload.
 Package: procps-ng-top
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 40462
 Filename: bin/ar71xx/packages/base/procps-ng-top_3.3.15-1_ar71xx.ipk
@@ -588,8 +691,11 @@ Description:  Installs the applet top.
 Package: procps-ng-uptime
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 2737
 Filename: bin/ar71xx/packages/base/procps-ng-uptime_3.3.15-1_ar71xx.ipk
@@ -601,8 +707,11 @@ Description:  Installs the applet uptime.
 Package: procps-ng-vmstat
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 9199
 Filename: bin/ar71xx/packages/base/procps-ng-vmstat_3.3.15-1_ar71xx.ipk
@@ -614,8 +723,11 @@ Description:  Installs the applet vmstat.
 Package: procps-ng-w
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 5600
 Filename: bin/ar71xx/packages/base/procps-ng-w_3.3.15-1_ar71xx.ipk
@@ -627,8 +739,11 @@ Description:  Installs the applet w.
 Package: procps-ng-watch
 Version: 3.3.15-1
 Depends: libc, procps-ng
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 7251
 Filename: bin/ar71xx/packages/base/procps-ng-watch_3.3.15-1_ar71xx.ipk
@@ -640,8 +755,11 @@ Description:  Installs the applet watch.
 Package: procps-ng
 Version: 3.3.15-1
 Depends: libc, libncurses
+Source: package/utils/procps-ng
 License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
 Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
 Architecture: ar71xx
 Installed-Size: 73580
 Filename: bin/ar71xx/packages/base/procps-ng_3.3.15-1_ar71xx.ipk
@@ -658,8 +776,11 @@ Description:  procps is a set of command line and full-screen utilities that pro
 Package: protobuf
 Version: 2.6.1-1
 Depends: libc, zlib, libpthread, libstdcpp
+Source: package/libs/protobuf
 License: BSD-3-Clause
+LicenseFiles: LICENSE
 Section: libs
+Maintainer: Obinou <obconseil@gmail.com>
 Architecture: ar71xx
 Installed-Size: 596588
 Filename: bin/ar71xx/packages/base/protobuf_2.6.1-1_ar71xx.ipk
@@ -673,8 +794,11 @@ Description:  Protocol Buffers are a way of encoding structured data in an effic
 Package: python-base
 Version: 2.7.12-1
 Depends: libc, libpthread, zlib
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 622108
 Filename: bin/ar71xx/packages/base/python-base_2.7.12-1_ar71xx.ipk
@@ -687,8 +811,11 @@ Description:  This package contains only the interpreter and the bare minimum
 Package: python-codecs
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 879926
 Filename: bin/ar71xx/packages/base/python-codecs_2.7.12-1_ar71xx.ipk
@@ -700,8 +827,11 @@ Description:  Python 2.7 codecs + unicode support
 Package: python-compiler
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 37818
 Filename: bin/ar71xx/packages/base/python-compiler_2.7.12-1_ar71xx.ipk
@@ -713,8 +843,11 @@ Description:  Python 2.7 compiler module
 Package: python-ctypes
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 99054
 Filename: bin/ar71xx/packages/base/python-ctypes_2.7.12-1_ar71xx.ipk
@@ -726,8 +859,11 @@ Description:  Python 2.7 ctypes module
 Package: python-db
 Version: 2.7.12-1
 Depends: libc, python-light, libdb47
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 101226
 Filename: bin/ar71xx/packages/base/python-db_2.7.12-1_ar71xx.ipk
@@ -739,8 +875,11 @@ Description:  Python 2.7 db module
 Package: python-decimal
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 47102
 Filename: bin/ar71xx/packages/base/python-decimal_2.7.12-1_ar71xx.ipk
@@ -752,8 +891,11 @@ Description:  Python 2.7 decimal module
 Package: python-distutils
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 541713
 Filename: bin/ar71xx/packages/base/python-distutils_2.7.12-1_ar71xx.ipk
@@ -765,8 +907,11 @@ Description:  Python 2.7 distutils
 Package: python-email
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 147002
 Filename: bin/ar71xx/packages/base/python-email_2.7.12-1_ar71xx.ipk
@@ -778,8 +923,11 @@ Description:  Python 2.7 email module
 Package: python-gdbm
 Version: 2.7.12-1
 Depends: libc, python-light, libgdbm
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 5572
 Filename: bin/ar71xx/packages/base/python-gdbm_2.7.12-1_ar71xx.ipk
@@ -791,8 +939,11 @@ Description:  Python 2.7 gdbm module
 Package: python-light
 Version: 2.7.12-1
 Depends: libc, python-base, libffi, libbz2
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 1242561
 Filename: bin/ar71xx/packages/base/python-light_2.7.12-1_ar71xx.ipk
@@ -806,8 +957,11 @@ Description:  This package is essentially the python-base package plus
 Package: python-logging
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 37203
 Filename: bin/ar71xx/packages/base/python-logging_2.7.12-1_ar71xx.ipk
@@ -819,8 +973,11 @@ Description:  Python 2.7 logging module
 Package: python-multiprocessing
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 47357
 Filename: bin/ar71xx/packages/base/python-multiprocessing_2.7.12-1_ar71xx.ipk
@@ -832,8 +989,11 @@ Description:  Python 2.7 multiprocessing
 Package: python-ncurses
 Version: 2.7.12-1
 Depends: libc, python-light, libncurses
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 26600
 Filename: bin/ar71xx/packages/base/python-ncurses_2.7.12-1_ar71xx.ipk
@@ -845,8 +1005,11 @@ Description:  Python 2.7 ncurses module
 Package: python-openssl
 Version: 2.7.12-1
 Depends: libc, python-light, libopenssl
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 34730
 Filename: bin/ar71xx/packages/base/python-openssl_2.7.12-1_ar71xx.ipk
@@ -858,8 +1021,11 @@ Description:  Python 2.7 SSL module
 Package: python-pydoc
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 191849
 Filename: bin/ar71xx/packages/base/python-pydoc_2.7.12-1_ar71xx.ipk
@@ -871,8 +1037,11 @@ Description:  Python 2.7 pydoc module
 Package: python-sqlite3
 Version: 2.7.12-1
 Depends: libc, python-light, libsqlite3
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 41942
 Filename: bin/ar71xx/packages/base/python-sqlite3_2.7.12-1_ar71xx.ipk
@@ -884,8 +1053,11 @@ Description:  Python 2.7 sqlite3 module
 Package: python-unittest
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 53799
 Filename: bin/ar71xx/packages/base/python-unittest_2.7.12-1_ar71xx.ipk
@@ -897,8 +1069,11 @@ Description:  Python 2.7 unittest module
 Package: python-xml
 Version: 2.7.12-1
 Depends: libc, python-light
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 156515
 Filename: bin/ar71xx/packages/base/python-xml_2.7.12-1_ar71xx.ipk
@@ -910,8 +1085,11 @@ Description:  Python 2.7 xml libs
 Package: python
 Version: 2.7.12-1
 Depends: libc, python-light, python-ctypes, python-pydoc, python-multiprocessing, python-logging, python-codecs, python-sqlite3, python-gdbm, python-email, python-distutils, python-openssl, python-xml, python-compiler, python-db, python-decimal, python-unittest, python-ncurses
+Source: package/lang/python
 License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Architecture: ar71xx
 Installed-Size: 104
 Filename: bin/ar71xx/packages/base/python_2.7.12-1_ar71xx.ipk
@@ -924,8 +1102,11 @@ Description:  This package contains the (almost) full Python install.
 Package: reaver
 Version: 1.6.5-10
 Depends: libc, libpcap
+Source: /root/gits/reaver-openwrt/net/reaver
 License: GPL-2.0
+LicenseFiles: docs/LICENSE
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com>
 Architecture: ar71xx
 Installed-Size: 330534
 Filename: bin/ar71xx/packages/base/reaver_1.6.5-10_ar71xx.ipk
@@ -944,7 +1125,9 @@ Description:  Reaver has been designed to be a robust and practical attack again
 Package: reghack
 Version: 1.0-2
 Depends: libc
+Source: /root/gits/reghack-openwrt
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 3096
 Filename: bin/ar71xx/packages/base/reghack_1.0-2_ar71xx.ipk
@@ -959,8 +1142,10 @@ Description:  The reghack utility replaces the regulatory domain rules
 Package: sqlite3-cli
 Version: 3081101-1
 Depends: libc, libsqlite3, libncurses, libreadline
+Source: package/libs/protobuf/sqlite3
 License: PUBLICDOMAIN
 Section: utils
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Architecture: ar71xx
 Installed-Size: 363336
 Filename: bin/ar71xx/packages/base/sqlite3-cli_3081101-1_ar71xx.ipk
@@ -976,7 +1161,9 @@ Description:  SQLite is a small C library that implements a self-contained, embe
 Package: sslstrip2
 Version: 1.0-1
 Depends: libc, python, twisted, twisted-web, pyopenssl, dns2proxy
+Source: package/net/sslstrip2
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 8572
 Filename: bin/ar71xx/packages/base/sslstrip2_1.0-1_ar71xx.ipk
@@ -989,7 +1176,9 @@ Description:  With the new feature to avoid HTTP Strict Transport Security (HSTS
 Package: terminfo
 Version: 5.9-2
 Depends: libc
+Source: package/libs/ncurses
 License: MIT
+LicenseFiles: README
 Section: libs
 Architecture: ar71xx
 Installed-Size: 5832
@@ -1002,7 +1191,9 @@ Description:  Terminal Info Database (ncurses)
 Package: wifite
 Version: 2.1.9-1
 Depends: libc, python, coreutils-stty, reaver, bully, aircrack-ng
+Source: package/net/wifite
 Section: lang
+Maintainer: Andreas Nilsen <adde88@gmail.com>
 Architecture: ar71xx
 Installed-Size: 56074
 Filename: bin/ar71xx/packages/base/wifite_2.1.9-1_ar71xx.ipk
@@ -1014,7 +1205,9 @@ Description:  Wifite runs existing wireless-auditing tools for you. Stop memoriz
 Package: zlib
 Version: 1.2.8-1
 Depends: libc
+Source: package/libs/zlib
 License: Zlib
+LicenseFiles: README
 Section: libs
 Architecture: ar71xx
 Installed-Size: 37112
@@ -1028,8 +1221,11 @@ Package: libdb47
 Version: 4.7.25.4.NC-4.1
 Depends: libc, libxml2
 Provides: libdb47-full
+Source: feeds/packages/libs/db47
 License: Sleepycat
+LicenseFiles: LICENSE
 Section: libs
+Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: ar71xx
 Installed-Size: 439812
 Filename: bin/ar71xx/packages/packages/libdb47_4.7.25.4.NC-4.1_ar71xx.ipk
@@ -1042,8 +1238,11 @@ Package: libdb47xx
 Version: 4.7.25.4.NC-4.1
 Depends: libc, libdb47, uclibcxx
 Provides: libdb47xx-full
+Source: feeds/packages/libs/db47
 License: Sleepycat
+LicenseFiles: LICENSE
 Section: libs
+Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: ar71xx
 Installed-Size: 470797
 Filename: bin/ar71xx/packages/packages/libdb47xx_4.7.25.4.NC-4.1_ar71xx.ipk
@@ -1055,8 +1254,11 @@ Description:  Berkeley DB library (4.7).  C++ wrapper.
 Package: libffi
 Version: 3.0.13-1
 Depends: libc
+Source: feeds/packages/libs/libffi
 License: MIT
+LicenseFiles: LICENSE
 Section: libs
+Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ar71xx
 Installed-Size: 5402
 Filename: bin/ar71xx/packages/packages/libffi_3.0.13-1_ar71xx.ipk
@@ -1077,7 +1279,9 @@ Description:  The libffi library provides a portable, high level programming int
 Package: libgcrypt
 Version: 1.6.1-1
 Depends: libc, libgpg-error
+Source: feeds/packages/libs/libgcrypt
 Section: libs
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ar71xx
 Installed-Size: 280314
 Filename: bin/ar71xx/packages/packages/libgcrypt_1.6.1-1_ar71xx.ipk
@@ -1096,8 +1300,11 @@ Description:  This is a general purpose cryptographic library based on the code 
 Package: libgdbm
 Version: 1.11-1
 Depends: libc
+Source: feeds/packages/libs/gdbm
 License: GPL-3.0+
+LicenseFiles: COPYING
 Section: libs
+Maintainer: Marcel Denia <naoir@gmx.net>
 Architecture: ar71xx
 Installed-Size: 15890
 Filename: bin/ar71xx/packages/packages/libgdbm_1.11-1_ar71xx.ipk
@@ -1111,7 +1318,9 @@ Description:  GNU database manager library
 Package: libgpg-error
 Version: 1.12-1
 Depends: libc
+Source: feeds/packages/libs/libgpg-error
 Section: libs
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ar71xx
 Installed-Size: 5792
 Filename: bin/ar71xx/packages/packages/libgpg-error_1.12-1_ar71xx.ipk
@@ -1127,8 +1336,11 @@ Description:  An helper library for common error codes and descriptions.
 Package: libxml2
 Version: 2.9.2-3
 Depends: libc, libpthread, zlib
+Source: feeds/packages/libs/libxml2
 License: MIT
+LicenseFiles: COPYING
 Section: libs
+Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ar71xx
 Installed-Size: 444543
 Filename: bin/ar71xx/packages/packages/libxml2_2.9.2-3_ar71xx.ipk
@@ -1140,7 +1352,9 @@ Description:  A library for manipulating XML and HTML resources.
 Package: dns2proxy
 Version: 1.0-1
 Depends: libc, python, python-dns, python-pcapy
+Source: package/net/dns2proxy
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 6180
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/dns2proxy_1.0-1_ar71xx.ipk
@@ -1152,8 +1366,10 @@ Description:  This tools offer a different features for post-explotation once yo
 Package: libpcap
 Version: 1.8.1-1
 Depends: libc
+Source: package/libs/libpcap
 License: BSD-3-Clause
 Section: libs
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 86420
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/libpcap_1.8.1-1_ar71xx.ipk
@@ -1166,6 +1382,7 @@ Description:  This package contains a system-independent library for user-level 
 Package: pyopenssl
 Version: 0.10-1
 Depends: libc, python, libopenssl
+Source: package/lang/pyopenssl
 Section: lang
 Architecture: ar71xx
 Installed-Size: 62535
@@ -1178,8 +1395,11 @@ Description:  Python interface to the OpenSSL library.
 Package: python-dns
 Version: 1.12.0-1
 Depends: libc, python
+Source: package/lang/python-dns
 License: ISC
+LicenseFiles: LICENSE
 Section: language-python
+Maintainer: Andreas Nilsen <adde88@gmail.com>
 Architecture: ar71xx
 Installed-Size: 89937
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/python-dns_1.12.0-1_ar71xx.ipk
@@ -1191,8 +1411,10 @@ Description:  dnspython is a DNS toolkit for Python. It supports almost all reco
 Package: python-pcapy
 Version: 0.10.9-1
 Depends: libc, python, libpcap, libstdcpp
+Source: package/lang/python-pcapy
 License: Apache Modified
 Section: lang
+Maintainer: Dmitry Kireev<dmitry@kireev.co>
 Architecture: ar71xx
 Installed-Size: 7725
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/python-pcapy_0.10.9-1_ar71xx.ipk
@@ -1204,8 +1426,11 @@ Description:  Pcapy is a Python extension module that interfaces with the libpca
 Package: scapy
 Version: 2.3.1-1
 Depends: libc, python
+Source: package/net/scapy
 License: GPL-2.0
+LicenseFiles: PKG-INFO
 Section: net
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ar71xx
 Installed-Size: 336331
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/scapy_2.3.1-1_ar71xx.ipk
@@ -1220,7 +1445,9 @@ Description:  Scapy is a powerful interactive packet manipulation program built 
 Package: sslstrip2
 Version: 1.0-1
 Depends: libc, python, twisted, twisted-web, pyopenssl
+Source: package/net/sslstrip2
 Section: net
+Maintainer: Andreas Nilsen <adde88@gmail.com.com>
 Architecture: ar71xx
 Installed-Size: 23691
 Filename: build_dir/target-mips_34kc_uClibc-0.9.33.2/hostapd-mana-2.6.5/dependencies/sslstrip2_1.0-1_ar71xx.ipk
@@ -1234,6 +1461,7 @@ Description:  sslstrip2 is a new version of Moxie´s SSLstrip
 Package: twisted-conch
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 109140
@@ -1246,6 +1474,7 @@ Description:  Twisted - Conch
 Package: twisted-lore
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 25433
@@ -1258,6 +1487,7 @@ Description:  Twisted - Lore
 Package: twisted-mail
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 92728
@@ -1270,6 +1500,7 @@ Description:  Twisted - Mail
 Package: twisted-names
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 26001
@@ -1282,6 +1513,7 @@ Description:  Twisted - Names
 Package: twisted-news
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 15575
@@ -1294,6 +1526,7 @@ Description:  Twisted - News
 Package: twisted-runner
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 8739
@@ -1306,6 +1539,7 @@ Description:  Twisted - Runner
 Package: twisted-web
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 128301
@@ -1318,6 +1552,7 @@ Description:  Twisted - Web
 Package: twisted-words
 Version: 2.5.0-1
 Depends: libc, python, twisted
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 146441
@@ -1330,6 +1565,7 @@ Description:  Twisted - Words
 Package: twisted
 Version: 2.5.0-1
 Depends: libc, python, zope-interface
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 524784
@@ -1342,6 +1578,7 @@ Description:  Python networking engine
 Package: zope-interface
 Version: 2.5.0-1
 Depends: libc, python, python
+Source: package/lang/twisted
 Section: lang
 Architecture: ar71xx
 Installed-Size: 65353
