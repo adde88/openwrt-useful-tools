@@ -1,7 +1,0 @@
---- a/src/channelhopper.c
-+++ b/src/channelhopper.c
-@@ -1,4 +1,3 @@
--#define _NET_IF_H 1
- #include <errno.h>
- #include <string.h>
- #include <stdio.h>

@@ -9,18 +9,20 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mdk4
 PKG_VERSION:=1.0
-PKG_RELEASE:=4
+PKG_RELEASE:=5
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/mdk4-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/adde88/mdk4.git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
-PKG_SOURCE_VERSION:=87fb4c0cdea239ca7385f32503b35bdc50649465
+PKG_SOURCE_VERSION:=415654bb6c15d22d4d9f076644bd1b2b9c436fae
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
 
 PKG_BUILD_PARALLEL:=1
+
+MAKE_PATH:=.
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -44,10 +46,10 @@ TARGET_LDFLAGS+= \
         -static-libstdc++ \
         -Wl,--gc-sections
 
-define Build/Compile
-        $(MAKE) -C $(PKG_BUILD_DIR)/src \
-                $(TARGET_CONFIGURE_OPTS)
-endef
+#define Build/Compile
+#        $(MAKE) -C $(PKG_BUILD_DIR)/src \
+#                $(TARGET_CONFIGURE_OPTS)
+#endef
 
 define Package/mdk4/install
 	$(INSTALL_DIR) $(1)/usr/sbin
