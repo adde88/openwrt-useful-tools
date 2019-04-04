@@ -1,0 +1,16 @@
+--- a/log_tools/kismetdb_to_wiglecsv.cc
++++ b/log_tools/kismetdb_to_wiglecsv.cc
+@@ -532,7 +532,12 @@ int main(int argc, char *argv[]) {
+                 std::tm tm = *std::localtime(&timet);
+                 std::stringstream ts;
+ 
+-                ts << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
++                #if __GNUC__ >= 5
++			ts << std::put_time(&tm, "%Y-%b-%d %H:%M:%S");
++		#else
++			char mltime[128];
++			strftime(mltime,sizeof(mltime),"%Y-%b-%d %H:%M:%S", std::localtime(&timet));
++		#endif
+ 
+                 cached = new cache_obj{ts.str(), name, crypt};
+ 
