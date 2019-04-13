@@ -1,3 +1,0 @@
-[submodule "wifiphisher-openwrt/wifiphisher"]
-	path = wifiphisher-openwrt/wifiphisher
-	url = https://github.com/wifiphisher/wifiphisher
