@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mdk4
 PKG_VERSION:=1.0
-PKG_RELEASE:=5
+PKG_RELEASE:=8
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/mdk4-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git
@@ -24,12 +24,18 @@ PKG_BUILD_PARALLEL:=1
 
 MAKE_PATH:=.
 
+PKG_CONFIG_DEPENDS:=\
+	CONFIG_MDK4_libnl \
+	CONFIG_MDK4_libnl-genl \
+
 include $(INCLUDE_DIR)/package.mk
 
 define Package/mdk4
   SECTION:=net
   CATEGORY:=Network
-  DEPENDS:=+libpthread +libnl +libpcap +libpcre
+  DEPENDS:=+libpthread +libpcap +libpcre \
+		+CONFIG_MDK4_libnl:libnl \
+		+CONFIG_MDK4_libnl-genl:libnl-genl +CONFIG_MDK4_libnl-genl:libnl-core
   TITLE:=mdk4
   URL:=https://github.com/aircrack-ng/mdk4
   SUBMENU:=wireless
@@ -46,9 +52,13 @@ TARGET_LDFLAGS+= \
         -static-libstdc++ \
         -Wl,--gc-sections
 
+TARGET_CFLAGS+= \
+	-static
+
 #define Build/Compile
-#        $(MAKE) -C $(PKG_BUILD_DIR)/src \
-#                $(TARGET_CONFIGURE_OPTS)
+#        $(MAKE) -C $(PKG_BUILD_DIR)/ \
+#                $(TARGET_CONFIGURE_OPTS) \
+#		CFLAGS="$(TARGET_CFLAGS) -static"
 #endef
 
 define Package/mdk4/install
