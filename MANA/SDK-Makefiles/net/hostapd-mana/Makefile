@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hostapd-mana
 PKG_VERSION:=2.6.5
-PKG_RELEASE:=4-ssl
+PKG_RELEASE:=4
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git

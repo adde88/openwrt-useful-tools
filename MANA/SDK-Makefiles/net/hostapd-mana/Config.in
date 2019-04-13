@@ -52,7 +52,7 @@ config DRIVER_11AC_SUPPORT
 
 config DRIVER_11W_SUPPORT
         bool "802.11w Support"
-        default n
+        default y
 
 config TAXONOMY
         bool "Enable Taxonomy"
