@@ -8,15 +8,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libpcap
-PKG_VERSION:=1.8.1
+PKG_VERSION:=1.9.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://www.tcpdump.org/release/
-PKG_MD5SUM:=3d48f9cd171ff12b0efd9134b52f1447
+PKG_SOURCE_URL:=http://www.us.tcpdump.org/release/ \
+        http://www.tcpdump.org/release/
+PKG_HASH:=2edb88808e5913fdaa8e9c1fcaf272e19b2485338742b5074b9fe44d68f37019
 PKG_FIXUP:=patch-libtool
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
+PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
 
 PKG_INSTALL:=1
 PKG_BUILD_PARALLEL:=1
@@ -48,9 +49,12 @@ TARGET_CFLAGS += \
 
 CONFIGURE_VARS += \
 	ac_cv_linux_vers=$(LINUX_VERSION) \
-	ac_cv_header_libusb_1_0_libusb_h=no \
-	ac_cv_netfilter_can_compile=no
+	ac_cv_header_libusb_1_0_libusb_h=no
 
+ifeq ($(CONFIG_PCAP_HAS_NETFILTER),)
+CONFIGURE_VARS += \
+	ac_cv_netfilter_can_compile=no
+endif
 
 CONFIGURE_ARGS += \
 	--enable-shared \
