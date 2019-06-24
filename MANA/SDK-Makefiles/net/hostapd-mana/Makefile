@@ -9,17 +9,15 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hostapd-mana
 PKG_VERSION:=2.6.5
-PKG_RELEASE:=4
+PKG_RELEASE:=12
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/adde88/hostapd-mana.git
-PKG_SOURCE_VERSION:=238699c4f6d97f924bd3364b41d6e683d8341403
+PKG_SOURCE_VERSION:=c4c8ae565c8fc34591134969b7846db70dd65028
+PKG_HASH:=88523aa06a342039c6e6df67532c80ac8fb91a6936a05c55c4330478021179c0
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-#PKG_HASH:=d93179b3a9a0c1af2e3c0a8a756b381678afab354004a89f0e5aabdfcac34961
-
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
 
 PKG_BUILD_PARALLEL:=1
 
@@ -90,7 +88,7 @@ DRIVER_MAKEOPTS= \
 	CONFIG_IEEE80211AC=$(HOSTAPD_IEEE80211AC) \
 	CONFIG_DRIVER_WEXT=$(CONFIG_DRIVER_WEXT_SUPPORT) \
 	CONFIG_TAXONOMY=$(CONFIG_TAXONOMY) \
-	$(if $(CONFIG_WPA_RFKILL_SUPPORT),NEED_RFKILL=y) \
+	$(if $(CONFIG_WPA_RFKILL_SUPPORT),NEED_RFKILL=n) \
 
 space :=
 space +=
@@ -111,7 +109,7 @@ ifneq ($(LOCAL_TYPE),hostapd)
     TARGET_CFLAGS += -DNO_TIMESTAMP_CHECK
   endif
   ifdef CONFIG_WPA_RFKILL_SUPPORT
-    DRIVER_MAKEOPTS += NEED_RFKILL=y
+    DRIVER_MAKEOPTS += NEED_RFKILL=n
   endif
   DRIVER_MAKEOPTS += \
 	CONFIG_DRIVER_ROBOSWITCH=$(CONFIG_PACKAGE_kmod-switch)
@@ -135,15 +133,19 @@ endef
 define Package/hostapd-mana/Default
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=IEEE 802.1x Authenticator with support for the MANA and Karma attacks.
-  DEPENDS:=$(DRV_DEPENDS) +libubus +libopenssl
+  TITLE:= Hostapd with support for the MANA and Karma attacks.
+  DEPENDS:=$(DRV_DEPENDS) +libubus +libopenssl +libpthread
+  URL:=https://github.com/sensepost/hostapd-mana
+  MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 endef
 
 define Package/hostapd-mana-light/Default
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=IEEE 802.1x Authenticator with support for the MANA and Karma attacks. (ONLY MANA BINARIES)
-  DEPENDS:=$(DRV_DEPENDS) +libubus +libopenssl
+  TITLE:=Hostapd with support for the MANA and Karma attacks. (ONLY MANA BINARIES)
+  DEPENDS:=$(DRV_DEPENDS) +libubus +libopenssl +libpthread
+  URL:=https://github.com/sensepost/hostapd-mana
+  MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 endef
 
 define Package/hostapd-mana
@@ -235,6 +237,7 @@ define Package/hostapd-mana/postinst
 mkdir -p /tmp/mana_dependencies/
 echo -e '\nDownloading Sycopant binary...\n\n'
 if [ -d /sd ]; then
+  ln -s /sd/etc/mana-toolkit /etc/mana-toolkit
   wget https://github.com/adde88/hostapd-mana-openwrt/raw/master/bin/ar71xx/packages/base/wpa_sycophant -O /sd/usr/sbin/wpa_sycophant
 else
   wget https://github.com/adde88/hostapd-mana-openwrt/raw/master/bin/ar71xx/packages/base/wpa_sycophant -O /usr/sbin/wpa_sycophant
