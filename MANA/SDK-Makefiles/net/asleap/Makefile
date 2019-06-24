@@ -19,7 +19,7 @@ PKG_CAT:=zcat
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/asleap-$(PKG_VERSION)
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>, Original asleap package: Josh <jwright@hasborg.com>
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>, Original asleap package: Josh <jwright@hasborg.com>
 
 PKG_BUILD_PARALLEL:=1
 

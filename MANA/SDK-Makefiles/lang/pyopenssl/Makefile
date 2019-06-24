@@ -18,7 +18,7 @@ PKG_MD5SUM:=34db8056ec53ce80c7f5fc58bee9f093
 PKG_BUILD_DIR:=$(BUILD_DIR)/pyOpenSSL-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)

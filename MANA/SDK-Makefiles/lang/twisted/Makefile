@@ -18,7 +18,7 @@ PKG_MD5SUM:=56df2ae66db57932515a491c03bf514f
 PKG_BUILD_DIR:=$(BUILD_DIR)/Twisted-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)

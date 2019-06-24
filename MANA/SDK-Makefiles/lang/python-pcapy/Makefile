@@ -16,7 +16,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/p/pcapy
 PKG_MD5SUM:=b91b423b0efbcffbe516d369f5d77ada
 
-PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com.com>
+PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_BUILD_DEPENDS:=python python-setuptools libpcap
 
