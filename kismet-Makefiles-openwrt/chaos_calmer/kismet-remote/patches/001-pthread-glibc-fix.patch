@@ -1,0 +1,11 @@
+--- a/util.cc
++++ b/util.cc
+@@ -971,7 +971,7 @@ std::string hexstr_to_binstr(const char
+     return r;
+ }
+ 
+-#if defined(SYS_LINUX)
++#if defined(SYS_LINUX) && __GLIBC__ >= 2 && __GLIBC_MINOR__ >= 12
+ void thread_set_process_name(const std::string& name) { 
+     pthread_setname_np(pthread_self(), name.c_str());
+ }

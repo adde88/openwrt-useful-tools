@@ -1,0 +1,25 @@
+diff -ruN Twisted-2.5.0/setup.py Twisted-2.5.0.new/setup.py
+--- Twisted-2.5.0/setup.py	2007-01-08 16:30:05.000000000 -0600
++++ Twisted-2.5.0.new/setup.py	2007-05-10 13:42:28.361934000 -0500
+@@ -16,9 +16,19 @@
+ """
+ 
+ import sys, os, glob
++#    sumoSubprojects = ['core', 'conch', 'lore', 'mail', 'names',
++#                   'runner', 'web', 'words', 'news']
++
++sp = os.getenv("TWISTED_SUBPROJECTS", None)
++if sp == None:
++    sumoSubprojects = ['core']
++else:
++    sumoSubprojects = sp.split()
++
++## make sure core is in sumoSubprojects
++if 'core' not in sumoSubprojects:
++    sumoSubprojects.insert(0, 'core')
+ 
+-sumoSubprojects = ['core', 'conch', 'lore', 'mail', 'names',
+-                   'runner', 'web', 'words', 'news']
+ 
+ specialPaths = {'core': 'twisted/topfiles/setup.py'}
+ 
