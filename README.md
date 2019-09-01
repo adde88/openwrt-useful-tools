@@ -14,7 +14,7 @@ Then SSH to your Pineapple and add the lines below to: **```/etc/opkg/customfeed
 # Zylla Custom Packages (Bleeding Edge)
 src/gz 1505_custom http://adde88.asuscomm.com:1090/bin/ar71xx/packages/base
 ```
-Updated are coming to above repo btw. stay tuned. :)
+Updates are coming to above repo btw. stay tuned. :)
 
 **Andreas Nilsen** [@adde88](https://twitter.com/adde88)
 
