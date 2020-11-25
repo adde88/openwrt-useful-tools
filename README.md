@@ -1,6 +1,6 @@
-# OpenWRT 19.07 - Useful Tools 
+# OpenWRT 19.07 - Useful Tools (MK7)
 
-## (For WiFi Pineapple MKVII *v2.7.0 or above*)
+## (For WiFi Pineapple MK7 *v2.7.0 or above*)
 ---
 Here you will find ALOT of different tools (both binaries and installation-packages) that i consider useful!  
 There are seperate branches for different versions of OpenWRT (Hak5 firmwares)  
