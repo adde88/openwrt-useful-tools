@@ -7,7 +7,11 @@ There are seperate branches for different versions of OpenWRT (Hak5 firmwares)
 Packages for the newer firmware can be found at the **[packages-19.07](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07)** branch of this repo.  
 
 ---
+## Stargazers over time
 
+[![Stargazers over time](https://starchart.cc/adde88/openwrt-useful-tools.svg)](https://starchart.cc/adde88/openwrt-useful-tools)
+
+---
 #### Donations:
 Are very much appreciated!  
 Alot of my spare-time goes to keeping software up-to-date with the Pineapples, and helping out the community in general!  
