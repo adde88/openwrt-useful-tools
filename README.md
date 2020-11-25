@@ -7,6 +7,11 @@ There are seperate branches for different versions of OpenWRT (Hak5 firmwares)
 Packages for the older firmwares can be found at the **[packages-15.05](https://github.com/adde88/openwrt-useful-tools/tree/packages-15.05)** branch of this repo, which will also continue on getting updates!  
 
 ---
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/adde88/openwrt-useful-tools.svg)](https://starchart.cc/adde88/openwrt-useful-tools)
+
+---
 #### Donations:
 Are very much appreciated!  
 Alot of my spare-time goes to keeping software up-to-date with the Pineapples, and helping out the community in general!  
