@@ -1,10 +1,10 @@
 # OpenWRT 19.07 - Useful Tools (MK7)
 
-## (For WiFi Pineapple MK7 *v2.7.0 or above*)
+## (For WiFi Pineapple MK7 *v1.0.0 or above*)
 ---
 Here you will find ALOT of different tools (both binaries and installation-packages) that i consider useful!  
-There are seperate branches for different versions of OpenWRT (Hak5 firmwares)  
-Packages for the older firmwares can be found at the **[packages-15.05](https://github.com/adde88/openwrt-useful-tools/tree/packages-15.05)** branch of this repo, which will also continue on getting updates!  
+There are seperate branches for different versions of OpenWRT running on the WiFi Pineapple MK6 (NANO/TETRA) (Hak5 firmwares)  
+Packages for the older firmwares for the MK6 can be found at the **[packages-19.07_mkvi](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvi)** branch of this repo, which i will try to continue on updating!  
 
 ---
 ## Stargazers over time
