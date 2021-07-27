@@ -19,4 +19,4 @@ Alot of my spare-time goes to keeping software up-to-date with the Pineapples, a
 It really helps me so i can continue on with this work. :)
 
 
-[![paypal](https://www.paypalobjects.com/en_US/NO/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJM939H9PHWW)
+[![paypal](https://www.paypalobjects.com/en_US/NO/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJM939H9PHWW) [![Join the chat at https://gitter.im/adde88/openwrt-useful-tools](https://badges.gitter.im/adde88/openwrt-useful-tools.svg)](https://gitter.im/adde88/openwrt-useful-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
