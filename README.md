@@ -1,4 +1,5 @@
 # OpenWRT 19.07 - Useful Tools (MK6)
+[![Join the chat at https://gitter.im/adde88/openwrt-useful-tools](https://badges.gitter.im/adde88/openwrt-useful-tools.svg)](https://gitter.im/adde88/openwrt-useful-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## (For WiFi Pineapple NANO/TETRA *v2.6.0 or above*)
 ---
