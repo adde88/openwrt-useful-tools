@@ -1,5 +1,6 @@
 # WiFi Pineapple MK7 - Useful Tools
 # OpenWRT 19.07
+[![Join the chat at https://gitter.im/adde88/openwrt-useful-tools](https://badges.gitter.im/adde88/openwrt-useful-tools.svg)](https://gitter.im/adde88/openwrt-useful-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## (For WiFi Pineapple MK7 Firmware *v1.0.0 or above*)
 ---
