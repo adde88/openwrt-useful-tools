@@ -8,6 +8,14 @@ Here you will find ALOT of different tools that i consider useful!
 There are seperate branches for different versions of OpenWRT which is running on the WiFi Pineapple MK6 (NANO/TETRA) (Hak5 firmwares)  
 Packages for the older firmwares for the Pineapple MK6 can be found at the **[packages-19.07_mkvi](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvi)** branch of this repo, which i will try to continue on updating!  
 
+### Example of upgrading the aircrack package using Pineapple terminal
+```
+opkg install git git-http
+git clone https://github.com/adde88/openwrt-useful-tools.git
+cd openwrt-useful-tools
+opkg install aircrack-ng-custom_1.6-5_mipsel_24kc.ipk  
+```
+
 ---
 ## Stargazers over time
 
