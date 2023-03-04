@@ -1,0 +1,498 @@
+Package: aircrack-ng-custom
+Version: 1.7-1
+Depends: libc, libhwloc, libpcre, libpthread, libstdcpp6, uclibcxx, libopenssl1.1, libsqlite3-0, python3, python3, libnl-core200, libnl-genl200, zlib
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:aircrack-ng:aircrack-ng
+Architecture: mipsel_24kc
+Installed-Size: 798505
+Filename: aircrack-ng-custom_1.7-1_mipsel_24kc.ipk
+Size: 798062
+SHA256sum: 5dcaebfaf59474e1e94ff1fa9f39791bab23f1e5c195ab9d5d07174111e597a1
+Description:  WLAN tools for breaking 802.11 WEP/WPA keys
+
+Package: airmon-ng-custom
+Version: 1.7-1
+Depends: libc, wireless-tools, ethtool, procps-ng
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:aircrack-ng:aircrack-ng
+Architecture: mipsel_24kc
+Installed-Size: 14247
+Filename: airmon-ng-custom_1.7-1_mipsel_24kc.ipk
+Size: 15184
+SHA256sum: dbd985c55baeee0158a273ae865a8c9941be377fdbf83c9bb48dec3526eabf34
+Description:  DEV-VERSION: Bash script designed to turn wireless cards into monitor mode.
+
+Package: asleap
+Version: 2.2-1
+Depends: libc, libpthread, libopenssl1.1, libpcap1
+License: GPL-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 154021
+Filename: asleap_2.2-1_mipsel_24kc.ipk
+Size: 155007
+SHA256sum: f6ff1741e5f54f251b0b48798a9b24e8f3e43835503a5273ea7186c6982f91e3
+Description:  A generic MS-CHAPv2 cracking tool.
+ Can be applied anytime you have a MS-CHAPv2 packet capture available.
+
+Package: backdoorfactory
+Version: 0.2-1
+Depends: libc, bettercap
+License: GPL-3.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1159718
+Filename: backdoorfactory_0.2-1_mipsel_24kc.ipk
+Size: 1159413
+SHA256sum: 337cb310542c08ef7e68c667855ef610ae68a540dc362593587a87570349b663
+Description:  Backdoorfactory is an extension to bettercap that allows the insertion of shellcode into intercepted file downloads.
+ It lets you man-in-the-middle live web file downloads and inject them with platform-appropriate shellcode. It works on downloaded archives as well.
+
+Package: bettercap
+Version: 2.32.0-1
+Depends: libc, libpcap1, libusb-1.0-0, libnetfilter-queue1
+License: GPL-3.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 6169488
+Filename: bettercap_2.32.0-1_mipsel_24kc.ipk
+Size: 6123006
+SHA256sum: 4f698c296f8da136624831130f7cb3b72b4c57c15ee5aeabc21a5479a6f9eaa9
+Description:  Bettercap is a powerful, easily extensible and portable framework written
+ in Go which aims to offer to security researchers, red teamers and reverse
+ engineers an easy to use, all-in-one solution with all the features they
+ might possibly need for performing reconnaissance and attacking WiFi
+ networks, Bluetooth Low Energy devices, wireless HID devices and Ethernet networks.
+
+Package: bladeRF
+Version: 2.4.1-1
+Depends: libc, libpthread, libusb-1.0-0, libbladerf
+License: Apache-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 96408
+Filename: bladeRF_2.4.1-1_mipsel_24kc.ipk
+Size: 96913
+SHA256sum: 47d0d81c647ce7b17dfecdf2a769a4b435e72f828fe52eacd2d606f0363ed88a
+Description:  bladeRF-wiphy is an open-source IEEE 802.11 compatible software defined radio VHDL modem
+ This package provides the libraries to use it on OpenWRT.
+
+Package: bully
+Version: 1.4-1
+Depends: libc, libpcap1, pixiewps-custom
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 61333
+Filename: bully_1.4-1_mipsel_24kc.ipk
+Size: 62303
+SHA256sum: b246b705247b5dbd8650361f5a9b217401579aa1c37eb8fbc39a69676c88745c
+Description:  Brute force attack against WPS, that actually works
+
+Package: evilginx
+Version: 2.4.0-1
+Depends: libc
+License: GPL-3.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 3195200
+Filename: evilginx_2.4.0-1_mipsel_24kc.ipk
+Size: 3191058
+SHA256sum: e403a39ea056694c65efd8ce47d966b9bb8d0bab70d6762cbc371b9d3ca6ae7d
+Description:  Evilginx2 is a man-in-the-middle attack framework used for phishing login credentials
+ along with session cookies, which in turn allows to bypass 2-factor authentication protection.
+
+Package: hcxdumptool-custom
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 60063
+Filename: hcxdumptool-custom_6.2.7-1_mipsel_24kc.ipk
+Size: 61257
+SHA256sum: c5905fdab8e81aa203ca70f7fcccdbb659382c8c6ebd5a2452eb674846f56d79
+Description:  Small tool to capture packets from wlan devices. After capturing, upload
+ the "uncleaned" cap here (https://wpa-sec.stanev.org/?submit)
+ to see if your ap or the client is vulnerable by using common wordlists.
+ Convert the cap to hccapx and/or to WPA-PMKID-PBKDF2 hashline (16800) with hcxpcaptool (hcxtools)
+ and check if wlan-key or plainmasterkey was transmitted unencrypted.
+
+Package: hcxlabtools
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 106704
+Filename: hcxlabtools_6.2.7-1_mipsel_24kc.ipk
+Size: 105931
+SHA256sum: 73538ebe0a65b39cdee6783db9d09cd4aeee5f21fb5e6adfd1bf2a6fa52c5730
+Description:  Small tool to capture packets from wlan devices. After capturing, upload
+ the "uncleaned" cap here (https://wpa-sec.stanev.org/?submit)
+ to see if your ap or the client is vulnerable by using common wordlists.
+ Convert the cap to hccapx and/or to WPA-PMKID-PBKDF2 hashline (16800) with hcxpcaptool (hcxtools)
+ and check if wlan-key or plainmasterkey was transmitted unencrypted.
+
+Package: hcxtools-custom
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1, libpthread, zlib, libcurl4, python3-light
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 140284
+Filename: hcxtools-custom_6.2.7-1_mipsel_24kc.ipk
+Size: 141258
+SHA256sum: b1bc3a4303711d5db08c99eb05edad9eb71d9e2968de403ff44a315d73dceb27
+Description:  Set of tools convert packets from captures (h = hash, c = capture, convert and calculate candidates, x = different hashtypes)
+ for the use with latest hashcat or John the Ripper.
+
+Package: hcxtools-full
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1, libpthread, zlib, libcurl4, python3-light
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: hcxtools-full_6.2.7-1_mipsel_24kc.ipk
+Size: 979
+SHA256sum: 2fe0c60fcc678c03e94f7d979d1424389aa5220f7fcecb23e4ea53b7ce2f7ac3
+Description:  This package includes all the tools made by @ZerBea
+ Tools: hcxtools, hcxdumptool, and wifi_laboratory (hcxlabtools)
+
+Package: hostapd-mana
+Version: 2.6.5-1
+Depends: libc, hostapd-common, libubus20210630, libopenssl1.1, libnl-tiny1, getopt
+License: GPL-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 461461
+Filename: hostapd-mana_2.6.5-1_mipsel_24kc.ipk
+Size: 463479
+SHA256sum: 97be362ed28e5e56c7ee05de309d2a3caca49e6335dbaf860e9cb600558ad46c
+Description:  This package contains hostapd with support for the MANA/KARMA attacks.
+
+Package: hostapd-wpe
+Version: 1-1
+Depends: libc, libubus20210630, libnl-tiny1
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 404618
+Filename: hostapd-wpe_1-1_mipsel_24kc.ipk
+Size: 406006
+SHA256sum: 43e1d83447e551a79e4af5254109479f2fe47929480b4e4a88cf46c84a09fca4
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS Authenticator with WPE patch support.
+
+Package: libbladerf
+Version: 2.4.1-1
+Depends: libc, libpthread, libusb-1.0-0, libbladerf
+License: Apache-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 365098
+Filename: libbladerf_2.4.1-1_mipsel_24kc.ipk
+Size: 364921
+SHA256sum: 2e670ff6e4ef1ad05630bdf430e809229e79f7989c96a90ffe2284462f944279
+Description:  bladeRF-wiphy libraries
+
+Package: libbtbb
+Version: 2020-12-R1-1
+Depends: libc, python3-light, python3-setuptools
+License: Apache-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 139343
+Filename: libbtbb_2020-12-R1-1_mipsel_24kc.ipk
+Size: 139506
+SHA256sum: 19cc5bf48f073f157e021a6523926ea8900d0292a197ebd38ab7ec54ea7cd05b
+Description:  This is the Bluetooth baseband decoding library
+ forked from the GR-Bluetooth project.
+ It can be used to extract Bluetooth packet and piconet
+ information from Ubertooth devices as well as GR-Bluetooth/USRP.
+
+Package: libgeoip
+Version: 1.6.12-1
+Depends: libc
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 339829
+Filename: libgeoip_1.6.12-1_mipsel_24kc.ipk
+Size: 320589
+SHA256sum: e3a2b4aaea4a8e459a6da77264881349571c0d12db6a0c03e8fc12fb78fba033
+Description:  GeoIP is a C library that enables the user to find geographical and network
+ information of an IP address
+
+Package: libwebsockets-full
+Version: 4.3.2-1
+Depends: libc, zlib, libcap, libuv1, libopenssl1.1, libuv1
+Provides: libwebsockets
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 179572
+Filename: libwebsockets-full_4.3.2-1_mipsel_24kc.ipk
+Size: 180260
+SHA256sum: 29702135777a1f20c8e37c4a3e39728e7ac82a94d4f37d4acec64379275be4a1
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: libwebsockets-openssl
+Version: 4.3.2-1
+Depends: libc, zlib, libcap, libuv1, libopenssl1.1
+Provides: libwebsockets
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 165596
+Filename: libwebsockets-openssl_4.3.2-1_mipsel_24kc.ipk
+Size: 166151
+SHA256sum: 55ac47739cb331d4c61dfb870d0ae38001115286233539376f0cbc69c0ff136a
+Description:  libwebsockets (OpenSSL)
+
+Package: libwifi0.0.8
+Version: 0.0.8-1
+Depends: libc
+Provides: libwifi
+License: Apache-2.0
+Section: net
+ABIVersion: 0.0.8
+Architecture: mipsel_24kc
+Installed-Size: 55626
+Filename: libwifi0.0.8_0.0.8-1_mipsel_24kc.ipk
+Size: 55570
+SHA256sum: 486bae914bc30deaa4754f6cd683f3e64c965876ce1c549dc376f30b34fdf625
+Description:  libwifi is a C library with a permissive license for
+ generating and parsing a wide variety of 802.11 wireless frames
+
+Package: mdk3
+Version: 8.1-1
+Depends: libc, libpthread, libnl200, libpcap1
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 57429
+Filename: mdk3_8.1-1_mipsel_24kc.ipk
+Size: 58324
+SHA256sum: d3fbbc7b8395cd97c3c7aca2118cf89c955eed0d0c24c99bbe75f089786aa609
+Description:  Tool to exploit wireless vulnerabilities
+
+Package: mdk4
+Version: 4.2-5
+Depends: libc, libpthread, libpcap1, libpcre, libnl200, libnl-genl200
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 120683
+Filename: mdk4_4.2-5_mipsel_24kc.ipk
+Size: 121571
+SHA256sum: bee4d3e645069de5f779dd92ffbdc3d520993adefdbf1a1a69794dbe3aa864c5
+Description:  Tool to exploit wireless vulnerabilities. (DEVELOPER VERSION)
+
+Package: mitmproxy
+Version: 8.1.1-1
+Depends: libc, python3-light, python3-setuptools, python3-brotlicffi, python3-cffi, python3-cryptography, python3-cssutils, python3-idna, python3-pillow, python3-ply, python3-pyasn1, python3-pycparser, python3-pyopenssl, python3-ruamel-yaml, python3-six, python3-urwid
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1641969
+Filename: mitmproxy_8.1.1-1_mipsel_24kc.ipk
+Size: 1655673
+SHA256sum: 38fadabefa671762915417cf300d811dd0aa638d745a739c5791b310d815d258
+Description:  An interactive TLS-capable intercepting HTTP proxy
+ for penetration testers and software developers.
+
+Package: nano-custom
+Version: 6.0-2
+Depends: libc, libncurses6, zlib
+License: GPL-3.0-or-later
+Section: net
+CPE-ID: cpe:/a:gnu:nano
+Architecture: mipsel_24kc
+Installed-Size: 121267
+Filename: nano-custom_6.0-2_mipsel_24kc.ipk
+Size: 122028
+SHA256sum: b0365bd20feebaf6d9a90289bb4101d335b07d6bf06bacaf1b0a2e32588b0833
+Description:  Custom version of Nano
+
+Package: ngrep
+Version: 1.47-1
+Depends: libc, libpcap1, libpcre
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 7828
+Filename: ngrep_1.47-1_mipsel_24kc.ipk
+Size: 8890
+SHA256sum: ad1eb596de4b90988b9e459b0674c685c0b28e9e115f60266d77f9635f3623be
+Description:  ngrep a pcap-aware tool that will allow you to specify extended
+ regular expressions to match against data payloads of packets. It
+ currently recognizes TCP, UDP, and ICMP across Ethernet, PPP, SLIP,
+ FDDI, Token Ring and null interfaces, and understands BPF filter
+ logic in the same fashion as more common packet sniffing tools,
+ like tcpdump and snoop.
+
+Package: pixelsrv-tls
+Version: 2.4-2
+Depends: libc, libopenssl1.1
+License: GPL-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 26774
+Filename: pixelsrv-tls_2.4-2_mipsel_24kc.ipk
+Size: 27621
+SHA256sum: 6ee1c57eda77f595cb3492ea9e40b657557dfebc5de0ab57e778d6d6fde1c1cd
+Description:  A tiny bespoke HTTP/1.1 webserver with HTTPS and SNI support.
+ It acts on behalf of hundreds of thousands of advert/tracker servers
+ and responds to all requests with nothing to speed up web browsing.
+ pixelserv-tls supports TLSv1.0, TLSv1.2 and TLSv1.3 and thus could operate with a wide range
+ of browsers and client devices. Server certificates for any given advert/tracker domains are
+ generated automatically on first use and saved to disk.
+ pixelserv-tls can log access and HTTP/1.1 POST contents to syslog.
+ So it is also a useful tool to inspect and expose 'wrongly blocked' domains
+ as well as 'rogue' domains invading user privacy.
+
+Package: pixiewps-custom
+Version: 1.4.2-1
+Depends: libc, libpthread, libopenssl1.1
+License: GPL-3.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 30928
+Filename: pixiewps-custom_1.4.2-1_mipsel_24kc.ipk
+Size: 31625
+SHA256sum: 519f505143f61ca80053d3e4c9dfd0b7f003fd17792fbf485af0cac96da13848
+Description:  Pixiewps is a tool written in C used to bruteforce offline the WPS PIN
+ exploiting the low or non-existing entropy of some Access Points, the so-called
+ "pixie-dust attack" discovered by Dominique Bongard in summer 2014.  It is
+ meant for educational purposes only.
+
+Package: python3-brotlicffi
+Version: 1.0.9.2-0
+Depends: libc, python3-light, python3-setuptools, python3-cffi, libstdcpp6
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 329596
+Filename: python3-brotlicffi_1.0.9.2-0_mipsel_24kc.ipk
+Size: 328037
+SHA256sum: d6d0ff3f673169c57e661f2923021c725519d09895914efd9b4165ae06c28342
+Description:  Python bindings to the Brotli compression library
+
+Package: python3-cssutils
+Version: 2.6.0-1
+Depends: libc, python3-light, python3-setuptools, python3-pip
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 409400
+Filename: python3-cssutils_2.6.0-1_mipsel_24kc.ipk
+Size: 418238
+SHA256sum: f18387bcc6abc54b7d918c9a75331129879707c299425a5a0c7d0145b6120c6e
+Description:  A Python package to parse and build CSS Cascading Style Sheets. Currently a DOM only, no rendering options.
+
+Package: python3-cython
+Version: 0.29.32-1
+Depends: libc, python3-light, python3-setuptools
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1607350
+Filename: python3-cython_0.29.32-1_mipsel_24kc.ipk
+Size: 1621632
+SHA256sum: a37f72b9731e30457a529e68bac6ae27928e20ecfe0f011b0482fb4757d39823
+Description:  C language extension library for Python
+
+Package: python3-protobuf
+Version: 4.21.7-1
+Depends: libc, python3-light, python3-setuptools, python3-six
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 151816
+Filename: python3-protobuf_4.21.7-1_mipsel_24kc.ipk
+Size: 155419
+SHA256sum: e86e5280b4bc6d8980cda04c135322aaed53364bd80f3b049c67e9832925f265
+Description:  The official implementation of Google Protobufs in Python3
+
+Package: python3-pyopenssl
+Version: 22.1.0-1
+Depends: libc, python3-light, python3-cryptography, python3-six
+License: Apache-2.0
+Section: net
+CPE-ID: cpe:/a:pyopenssl_project:pyopenssl
+Architecture: mipsel_24kc
+Installed-Size: 66745
+Filename: python3-pyopenssl_22.1.0-1_mipsel_24kc.ipk
+Size: 68390
+SHA256sum: c2df009e668848e642baf210a8d7c700e59cc9f7c0976c40466d5be9ddae3f1c
+Description:  Python wrapper module around the OpenSSL library
+
+Package: python3-twisted
+Version: 22.8.0-1
+Depends: libc, python3, python3-appdirs, python3-attrs, python3-automat, python3-bcrypt, python3-constantly, python3-cryptography, python3-idna, python3-incremental, python3-hyperlink, python3-pkg-resources, python3-pyasn1, python3-pyopenssl, python3-service-identity, python3-typing-extensions, python3-zope-interface
+License: MIT
+Section: net
+CPE-ID: cpe:/a:twistedmatrix:twisted
+Architecture: mipsel_24kc
+Installed-Size: 1848827
+Filename: python3-twisted_22.8.0-1_mipsel_24kc.ipk
+Size: 1871905
+SHA256sum: c0d9089c08bdff3eb3402c019b998d09ebac4716a12629d9b2c17c269db660bf
+Description:  Twisted is a networking engine written in Python, supporting numerous
+ protocols. It contains a web server, numerous chat clients, chat servers,
+ mail servers, and more.
+
+Package: python3-urwid
+Version: 2.1.2-1
+Depends: libc, python3-light, python3-setuptools
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 288562
+Filename: python3-urwid_2.1.2-1_mipsel_24kc.ipk
+Size: 292017
+SHA256sum: 4437e3d87e5b7a8e9757a0bd0b6c2bebe256dcd75896608ee24d8d9986a0017e
+Description:  A full-featured console (xterm et al.) user interface library
+
+Package: python3-zope-interface
+Version: 5.4.0-1
+Depends: libc, python3-light
+License: ZPL-2.1
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 125573
+Filename: python3-zope-interface_5.4.0-1_mipsel_24kc.ipk
+Size: 128206
+SHA256sum: 59e2fc5600d35b8229e022ce1d12da5e8364accbc6063f596a5bc0b3638f9b89
+Description:  This package provides an implementation of "object interfaces" for
+ Python. Interfaces are a mechanism for labeling objects as conforming to
+ a given API or contract. So, this package can be considered as
+ implementation of the Design By Contract methodology support in Python.
+
+Package: reaver-custom
+Version: 1.6.6-1
+Depends: libc, libpcap1, libpthread
+License: GPL-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 284733
+Filename: reaver-custom_1.6.6-1_mipsel_24kc.ipk
+Size: 215480
+SHA256sum: 726778cc28271bb1eff7a5298a0592a974d9021667cc24fd0a982d09cf37aa39
+Description:  Reaver has been designed to be a robust and practical attack against Wi-Fi
+ Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2
+ passphrases. It has been tested against a wide variety of access points and
+ WPS implementations.
+ 
+ This is reaver-wps-fork-t6x, a community forked version, which has included
+ various bug fixes and additional attack method (the offline Pixie Dust
+ attack).
+
+Package: scapy
+Version: 2.5.0-0
+Depends: libc, python3
+License: GPL-2.0-only
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1861046
+Filename: scapy_2.5.0-0_mipsel_24kc.ipk
+Size: 1863319
+SHA256sum: 38a7bbdb9fab87ebd307c74e6980e6b338ca7ea07444917d489bd7527f3422c7
+Description:  Scapy is a powerful interactive packet manipulation program built on top
+ of the Python interpreter. It can be used to forge or decode packets of
+ a wide number of protocols, send them over the wire, capture them, match
+ requests and replies, and much more.
+
