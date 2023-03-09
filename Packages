@@ -1,0 +1,319 @@
+Package: aircrack-ng-custom
+Version: 1.7-1
+Depends: libc, libhwloc, libpcre, libpthread, libstdcpp6, uclibcxx, libopenssl1.1, libsqlite3-0, python3, python3, libnl-core200, libnl-genl200, zlib
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 808493
+Filename: aircrack-ng-custom_1.7-1_mips_24kc.ipk
+Size: 805270
+SHA256sum: 88d4e721cd15860923438fc9764e45832575b94deb9751462f43ebd6682008ff
+Description:  WLAN tools for breaking 802.11 WEP/WPA keys
+
+Package: airmon-ng-custom
+Version: 1.7-1
+Depends: libc, wireless-tools, ethtool, procps-ng
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 14246
+Filename: airmon-ng-custom_1.7-1_mips_24kc.ipk
+Size: 15051
+SHA256sum: df9908a8221e12a94d5c1aa69c2f0b2fce52a8d0b636624f39a43fdfcf2fc7a8
+Description:  DEV-VERSION: Bash script designed to turn wireless cards into monitor mode.
+
+Package: asleap
+Version: 2.2-1
+Depends: libc, libpthread, libopenssl1.1, libpcap1
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 175572
+Filename: asleap_2.2-1_mips_24kc.ipk
+Size: 176319
+SHA256sum: bde525e63405e6e0ba6a74b0c7f660991349807c304f6a1b0b9fab8305a969ba
+Description:  A generic MS-CHAPv2 cracking tool.
+ Can be applied anytime you have a MS-CHAPv2 packet capture available.
+
+Package: backdoorfactory
+Version: 0.2-1
+Depends: libc, bettercap
+License: GPL-3.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 1473754
+Filename: backdoorfactory_0.2-1_mips_24kc.ipk
+Size: 1470869
+SHA256sum: fbed9a581f9d68c3c964e2327207b8438f2706e032c686ca3d0b71ecbdb887b3
+Description:  Backdoorfactory is an extension to bettercap that allows the insertion of shellcode into intercepted file downloads.
+ It lets you man-in-the-middle live web file downloads and inject them with platform-appropriate shellcode. It works on downloaded archives as well.
+
+Package: bladeRF
+Version: 2.4.1-1
+Depends: libc, libpthread, libusb-1.0-0, libbladerf
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 99495
+Filename: bladeRF_2.4.1-1_mips_24kc.ipk
+Size: 99334
+SHA256sum: 2a85953ae7f4c9e82613172b605372b854c18336aaabbdb27a7ee076a66cf237
+Description:  bladeRF-wiphy is an open-source IEEE 802.11 compatible software defined radio VHDL modem
+ This package provides the libraries to use it on OpenWRT.
+
+Package: bully
+Version: 1.4-1
+Depends: libc, libpcap1, pixiewps-custom
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 60315
+Filename: bully_1.4-1_mips_24kc.ipk
+Size: 61141
+SHA256sum: e1613ca5923b4611d62200bed5fe803627f8a899ac59b2e54af0a73f8bc555de
+Description:  Brute force attack against WPS, that actually works
+
+Package: evilginx
+Version: 2.4.0-1
+Depends: libc
+License: GPL-3.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4380400
+Filename: evilginx_2.4.0-1_mips_24kc.ipk
+Size: 4371741
+SHA256sum: 9242e15106cb43d2c9fe8f743f30f5668422bdedfc3264abb9a41002e6f3c91b
+Description:  Evilginx2 is a man-in-the-middle attack framework used for phishing login credentials
+ along with session cookies, which in turn allows to bypass 2-factor authentication protection.
+
+Package: hcxdumptool-custom
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 73921
+Filename: hcxdumptool-custom_6.2.7-1_mips_24kc.ipk
+Size: 74895
+SHA256sum: 592b0a3be415ee9a3e23aa00a0e57e7d337b63a72e26063f06ffd55996590583
+Description:  Small tool to capture packets from wlan devices. After capturing, upload
+ the "uncleaned" cap here (https://wpa-sec.stanev.org/?submit)
+ to see if your ap or the client is vulnerable by using common wordlists.
+ Convert the cap to hccapx and/or to WPA-PMKID-PBKDF2 hashline (16800) with hcxpcaptool (hcxtools)
+ and check if wlan-key or plainmasterkey was transmitted unencrypted.
+
+Package: hcxlabtools
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 131718
+Filename: hcxlabtools_6.2.7-1_mips_24kc.ipk
+Size: 131904
+SHA256sum: a65ed7951a25254b1a02fb554ca9417aea66b07f3403e32b4160ca48bb299a88
+Description:  Small tool to capture packets from wlan devices. After capturing, upload
+ the "uncleaned" cap here (https://wpa-sec.stanev.org/?submit)
+ to see if your ap or the client is vulnerable by using common wordlists.
+ Convert the cap to hccapx and/or to WPA-PMKID-PBKDF2 hashline (16800) with hcxpcaptool (hcxtools)
+ and check if wlan-key or plainmasterkey was transmitted unencrypted.
+
+Package: hcxtools-custom
+Version: 6.2.7-1
+Depends: libc, libpcap1, libopenssl1.1, libpthread, zlib, libcurl4, python3-light
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 159637
+Filename: hcxtools-custom_6.2.7-1_mips_24kc.ipk
+Size: 159528
+SHA256sum: dc813b4fa66fa5cd9556706871f3a84e5cb89e8874c5f165ba24bf01bd099575
+Description:  Set of tools convert packets from captures (h = hash, c = capture, convert and calculate candidates, x = different hashtypes)
+ for the use with latest hashcat or John the Ripper.
+
+Package: hostapd-mana
+Version: 2.6.5-1
+Depends: libc, hostapd-common, libubus20210603, libopenssl1.1, libnl-tiny, getopt
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 614563
+Filename: hostapd-mana_2.6.5-1_mips_24kc.ipk
+Size: 614006
+SHA256sum: 2a6a4010821dda5f9190de44cebb5f19d9d1be16f5712141400213a766b78e0d
+Description:  This package contains hostapd with support for the MANA/KARMA attacks.
+
+Package: hostapd-wpe
+Version: 1-1
+Depends: libc, libubus20210603, libnl-tiny
+Section: net
+Architecture: mips_24kc
+Installed-Size: 560136
+Filename: hostapd-wpe_1-1_mips_24kc.ipk
+Size: 560751
+SHA256sum: a86d9d48a1cb834533d1a21f70e2081b07f8d0d52496ace1dddacb379d675ae3
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS Authenticator with WPE patch support.
+
+Package: libbladerf
+Version: 2.4.1-1
+Depends: libc, libpthread, libusb-1.0-0, libbladerf
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 386093
+Filename: libbladerf_2.4.1-1_mips_24kc.ipk
+Size: 385860
+SHA256sum: ca20d962df6afc02ba5fb3d76e5872ee8c855d207f658c2d4af4c0dd3cb965ce
+Description:  bladeRF-wiphy libraries
+
+Package: libbtbb
+Version: 2020-12-R1-1
+Depends: libc, python3-light, python3-setuptools
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 152747
+Filename: libbtbb_2020-12-R1-1_mips_24kc.ipk
+Size: 153042
+SHA256sum: b63bb493483f2d8852e30c5d81d4475eee6c6d4f448179a798bb48cc0dd309cd
+Description:  This is the Bluetooth baseband decoding library
+ forked from the GR-Bluetooth project.
+ It can be used to extract Bluetooth packet and piconet
+ information from Ubertooth devices as well as GR-Bluetooth/USRP.
+
+Package: libgeoip
+Version: 1.6.12
+Depends: libc
+Section: net
+Architecture: mips_24kc
+Installed-Size: 354614
+Filename: libgeoip_1.6.12_mips_24kc.ipk
+Size: 332027
+SHA256sum: 888656ed943d4f99a17625528c5902c92d14c770d24c253838081d022c4fdd76
+Description:  GeoIP is a C library that enables the user to find geographical and network
+ information of an IP address
+
+Package: libwebsockets-full
+Version: 4.3.2
+Depends: libc, zlib, libcap, libuv1, libopenssl1.1, libuv1
+Provides: libwebsockets
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 404038
+Filename: libwebsockets-full_4.3.2_mips_24kc.ipk
+Size: 402480
+SHA256sum: 94ced3ef0477659a295cf7f96b0205d2023c1a81ce8aebd1eb4cc2366694fb25
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: libwebsockets-openssl
+Version: 4.3.2
+Depends: libc, zlib, libcap, libuv1, libopenssl1.1
+Provides: libwebsockets
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 380234
+Filename: libwebsockets-openssl_4.3.2_mips_24kc.ipk
+Size: 378874
+SHA256sum: 42a7ca4873ad6d5e5d6ff12341d90f157f490a3760b578600935756252ee1c65
+Description:  libwebsockets (OpenSSL)
+
+Package: libwifi
+Version: 0.0.8-1
+Depends: libc
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 56267
+Filename: libwifi_0.0.8-1_mips_24kc.ipk
+Size: 55881
+SHA256sum: 69185723be50ac0e049b431501ec5477b838fda9b232220ce6ae7decffeed688
+Description:  libwifi is a C library with a permissive license for
+ generating and parsing a wide variety of 802.11 wireless frames
+
+Package: mdk3
+Version: 8.1-1
+Depends: libc, libpthread, libnl200, libpcap1
+Section: net
+Architecture: mips_24kc
+Installed-Size: 57909
+Filename: mdk3_8.1-1_mips_24kc.ipk
+Size: 58588
+SHA256sum: a2c5a88d71f222dbefb4d84c40b608c1e271e7247fe6e586e8c477b77865c4fc
+Description:  Tool to exploit wireless vulnerabilities
+
+Package: mdk4
+Version: 4.2-5
+Depends: libc, libpthread, libpcap1, libpcre, libnl200, libnl-genl200
+Section: net
+Architecture: mips_24kc
+Installed-Size: 123592
+Filename: mdk4_4.2-5_mips_24kc.ipk
+Size: 124377
+SHA256sum: 0d8678cb07ab4c89961d05022c70b50c55c875ee21315ef36864985277350704
+Description:  Tool to exploit wireless vulnerabilities. (DEVELOPER VERSION)
+
+Package: pixiewps-custom
+Version: 1.4.2-1
+Depends: libc, libpthread, libopenssl1.1
+License: GPL-3.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 37881
+Filename: pixiewps-custom_1.4.2-1_mips_24kc.ipk
+Size: 38564
+SHA256sum: 9cab933fbd533d329b22967856eda7f097fa93fe0efb263edac02702cbd6a74f
+Description:  Pixiewps is a tool written in C used to bruteforce offline the WPS PIN
+ exploiting the low or non-existing entropy of some Access Points, the so-called
+ "pixie-dust attack" discovered by Dominique Bongard in summer 2014.  It is
+ meant for educational purposes only.
+
+Package: python3-brotlicffi
+Version: 1.0.9.2
+Depends: libc, python3-light, python3-setuptools, python3-cffi, libstdcpp6
+License: MIT
+Section: net
+Architecture: mips_24kc
+Installed-Size: 387487
+Filename: python3-brotlicffi_1.0.9.2_mips_24kc.ipk
+Size: 385781
+SHA256sum: 5bd3545da65fac82a1b8aed6ccee3d037fb132338148910a26c2c9544921c356
+Description:  Python bindings to the Brotli compression library
+
+Package: python3-cssutils
+Version: 2.6.0
+Depends: libc, python3-light, python3-setuptools
+Section: net
+Architecture: mips_24kc
+Installed-Size: 331330
+Filename: python3-cssutils_2.6.0_mips_24kc.ipk
+Size: 332252
+SHA256sum: fbf416a67f4bbf8bba31c812896f23f249379b799a156b452573db7f5f68428c
+Description:  A Python package to parse and build CSS Cascading Style Sheets. Currently a DOM only, no rendering options.
+
+Package: python3-pyopenssl
+Version: 23.0.0
+Depends: libc, python3-light, python3-cryptography, python3-six
+License: Apache-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 46014
+Filename: python3-pyopenssl_23.0.0_mips_24kc.ipk
+Size: 46910
+SHA256sum: a66a71067e75f97077767fad8616d2f108686be91a0b0c4e841d090ede9d33b7
+Description:  Python wrapper module around the OpenSSL library
+ .
+ (Variant for Python3).
+
+Package: python3-urwid
+Version: 2.1.2
+Depends: libc, python3-light, python3-setuptools
+Section: net
+Architecture: mips_24kc
+Installed-Size: 287370
+Filename: python3-urwid_2.1.2_mips_24kc.ipk
+Size: 288269
+SHA256sum: 4c8d93587330d9a656cc56ae76ee81e7d816f4b67f05c770a2d97488e0e37596
+Description:  A full-featured console (xterm et al.) user interface library
+
