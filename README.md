@@ -2,11 +2,12 @@
 ## OpenWRT 22.03
 [![Join the chat at https://gitter.im/adde88/openwrt-useful-tools](https://badges.gitter.im/adde88/openwrt-useful-tools.svg)](https://gitter.im/adde88/openwrt-useful-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-### (For WiFi Pineapple MK7 Firmware: *BETA or CFW*)
+### (For WiFi Pineapple MK7 Firmware: *BETA or CFW Versions* ONLY !)
+### (NOT intended for use with any official Hak5 FW 'Release Versions' !)
 ---
 Here you will find ALOT of different tools that i consider useful!  
 There are seperate branches for different versions of OpenWRT which is running on either the WiFi Pineapple MK6 (*NANO*/*TETRA*) or the MK7 (*Hak5 Firmwares*)  
-Packages for the curent live firmware for the Pineapple MK7 can be found at the 'main' **[packages-21.02_mkvii](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvi)** branch of this repo, which i will continue on updating!  
+Packages made for the current official live firmware versions for the Pineapple MK7 can be found at the 'main' **[packages-21.02_mkvii](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvi)** branch of this repo, which i will continue on updating!  
 
 ---
 ### Stargazers over time
