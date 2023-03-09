@@ -7,7 +7,7 @@
 Here you will find ALOT of different tools that i consider useful!  
 There are seperate branches for different versions of OpenWRT which is running on either the WiFi Pineapple MK6 (*NANO*/*TETRA*) or the MK7 (*Hak5 Firmwares*)   
 Packages for the older firmwares for the Pineapple MK6 (*NANO*/*TETRA*) can be found at the **[packages-15.05_mkvi](https://github.com/adde88/openwrt-useful-tools/tree/packages-15.05_mkvi)** branch of this repo, which i will try to continue on updating!  
-The latest branch is for the Pineapple MK7, and can be found here **[packages-19.07_mkvii](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvii)**  
+The latest branch for the Pineapple MK6 can be found here **[packages-19.07_mkvii](https://github.com/adde88/openwrt-useful-tools/tree/packages-19.07_mkvii)**  
 
 ---
 ### Stargazers over time
