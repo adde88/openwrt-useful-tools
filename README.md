@@ -19,8 +19,7 @@ Are very much appreciated!
 Alot of my spare-time goes to keeping software up-to-date with the Pineapples, and helping out the community in general!  
 It really helps me so i can continue on with this work. :)
 
-BTC: bc1qu7gfvcpx25mvt6q5certrzhy9qz28nyx6dw6cc
-ETH: 0x3fC32Eec044180Ba9Ab7FfD5Fa9C65dDC25C23Fa
-Doge: A2qNn9Zn55GzcV5BMGQgmEVpRA9UAk4emm
-
+BTC:  *bc1qu7gfvcpx25mvt6q5certrzhy9qz28nyx6dw6cc*  
+ETH:  *0x3fC32Eec044180Ba9Ab7FfD5Fa9C65dDC25C23Fa*  
+Doge: *A2qNn9Zn55GzcV5BMGQgmEVpRA9UAk4emm*  
 [![paypal](https://www.paypalobjects.com/en_US/NO/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HJM939H9PHWW)
